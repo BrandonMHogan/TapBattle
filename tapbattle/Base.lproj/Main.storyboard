@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tapbattle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,89 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pB6-jy-yLL" userLabel="RedView">
+                                <rect key="frame" x="0.0" y="353.5" width="375" height="313.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHb-Ut-cL5" userLabel="RedScoreLabel">
+                                        <rect key="frame" x="166" y="146.5" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.92508174971746837" blue="0.98809469913890657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="hHb-Ut-cL5" firstAttribute="centerY" secondItem="pB6-jy-yLL" secondAttribute="centerY" id="0N6-ar-3bM"/>
+                                    <constraint firstItem="hHb-Ut-cL5" firstAttribute="centerX" secondItem="pB6-jy-yLL" secondAttribute="centerX" id="bFp-gm-AQS"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="k4e-AN-fQ5" appends="YES" id="8R7-lJ-ehx"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smi-tS-uEU" userLabel="CenterLabel">
+                                <rect key="frame" x="166" y="323.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPI-Pz-r2H" userLabel="GreenView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="313.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0J-2d-q8Q" userLabel="GreenScoreLabel">
+                                        <rect key="frame" x="166" y="146" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85485871784433209" green="1" blue="0.88028010513760924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="V0J-2d-q8Q" firstAttribute="centerY" secondItem="iPI-Pz-r2H" secondAttribute="centerY" id="UTM-Am-Yw4"/>
+                                    <constraint firstItem="V0J-2d-q8Q" firstAttribute="centerX" secondItem="iPI-Pz-r2H" secondAttribute="centerX" id="bFN-5C-aD4"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RXH-yE-Crq" appends="YES" id="8go-ve-8s1"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Smi-tS-uEU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0lk-BJ-1UF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pB6-jy-yLL" secondAttribute="bottom" id="2dC-eh-toB"/>
+                            <constraint firstAttribute="trailing" secondItem="iPI-Pz-r2H" secondAttribute="trailing" id="36a-de-ERN"/>
+                            <constraint firstItem="Smi-tS-uEU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6xn-tx-ZtR"/>
+                            <constraint firstItem="pB6-jy-yLL" firstAttribute="top" secondItem="iPI-Pz-r2H" secondAttribute="bottom" constant="20" id="JvK-NO-QxN"/>
+                            <constraint firstItem="iPI-Pz-r2H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Qdx-fA-C7Z"/>
+                            <constraint firstItem="pB6-jy-yLL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TCQ-qO-fHZ"/>
+                            <constraint firstItem="iPI-Pz-r2H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fP5-h8-fBJ"/>
+                            <constraint firstAttribute="trailing" secondItem="pB6-jy-yLL" secondAttribute="trailing" id="fut-2n-vmp"/>
+                            <constraint firstItem="pB6-jy-yLL" firstAttribute="height" secondItem="iPI-Pz-r2H" secondAttribute="height" id="hUT-NY-Ssx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="centerLabel" destination="Smi-tS-uEU" id="R8m-AG-CnY"/>
+                        <outlet property="greenLabel" destination="V0J-2d-q8Q" id="krp-Qk-ZnJ"/>
+                        <outlet property="greenView" destination="iPI-Pz-r2H" id="lBf-dA-yU2"/>
+                        <outlet property="redLabel" destination="hHb-Ut-cL5" id="WGP-rx-zVT"/>
+                        <outlet property="redView" destination="pB6-jy-yLL" id="s8X-TF-kID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RXH-yE-Crq" userLabel="Green Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="greenViewTapped:" destination="BYZ-38-t0r" id="XJm-LD-C1U"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="k4e-AN-fQ5" userLabel="Red Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="redViewTapped:" destination="BYZ-38-t0r" id="cRP-M7-KoV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,7 @@
 		C0D97D161EBCF3D00086939C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D97D141EBCF3D00086939C /* LaunchScreen.storyboard */; };
 		C0D97D211EBCF3D00086939C /* tapbattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D97D201EBCF3D00086939C /* tapbattleTests.swift */; };
 		C0D97D2C1EBCF3D00086939C /* tapbattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D97D2B1EBCF3D00086939C /* tapbattleUITests.swift */; };
+		C0D97D3B1EBD07FD0086939C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0D97D3D1EBD07FD0086939C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C0D97D081EBCF3D00086939C /* tapbattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tapbattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D97D081EBCF3D00086939C /* Tap Battle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Battle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D97D0B1EBCF3D00086939C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0D97D0D1EBCF3D00086939C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0D97D101EBCF3D00086939C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		C0D97D271EBCF3D00086939C /* tapbattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tapbattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D97D2B1EBCF3D00086939C /* tapbattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tapbattleUITests.swift; sourceTree = "<group>"; };
 		C0D97D2D1EBCF3D00086939C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0D97D3E1EBD08020086939C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,7 @@
 		C0D97D091EBCF3D00086939C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0D97D081EBCF3D00086939C /* tapbattle.app */,
+				C0D97D081EBCF3D00086939C /* Tap Battle.app */,
 				C0D97D1C1EBCF3D00086939C /* tapbattleTests.xctest */,
 				C0D97D271EBCF3D00086939C /* tapbattleUITests.xctest */,
 			);
@@ -103,6 +105,7 @@
 				C0D97D121EBCF3D00086939C /* Assets.xcassets */,
 				C0D97D141EBCF3D00086939C /* LaunchScreen.storyboard */,
 				C0D97D171EBCF3D00086939C /* Info.plist */,
+				C0D97D3D1EBD07FD0086939C /* Localizable.strings */,
 			);
 			path = tapbattle;
 			sourceTree = "<group>";
@@ -142,7 +145,7 @@
 			);
 			name = tapbattle;
 			productName = tapbattle;
-			productReference = C0D97D081EBCF3D00086939C /* tapbattle.app */;
+			productReference = C0D97D081EBCF3D00086939C /* Tap Battle.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C0D97D1B1EBCF3D00086939C /* tapbattleTests */ = {
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0D97D161EBCF3D00086939C /* LaunchScreen.storyboard in Resources */,
+				C0D97D3B1EBD07FD0086939C /* Localizable.strings in Resources */,
 				C0D97D131EBCF3D00086939C /* Assets.xcassets in Resources */,
 				C0D97D111EBCF3D00086939C /* Main.storyboard in Resources */,
 			);
@@ -310,6 +314,15 @@
 				C0D97D151EBCF3D00086939C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C0D97D3D1EBD07FD0086939C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0D97D3E1EBD08020086939C /* Base */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -417,7 +430,7 @@
 				INFOPLIST_FILE = tapbattle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandonhogan.tapbattle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tap Battle";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -429,7 +442,7 @@
 				INFOPLIST_FILE = tapbattle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandonhogan.tapbattle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tap Battle";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
